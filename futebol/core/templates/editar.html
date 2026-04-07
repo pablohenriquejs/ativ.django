@@ -1,0 +1,9 @@
+<h1>Editar jogador</h1>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="nome" value="{{ jogador.nome }}"><br>
+    <input type="number" name="idade" value="{{ jogador.idade }}"><br>
+    <input type="text" name="time" value="{{ jogador.time }}"><br>
+    <button type="submit">Salvar</button>
+</form>

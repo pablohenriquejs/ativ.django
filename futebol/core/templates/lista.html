@@ -1,0 +1,13 @@
+<h1>Jogadores</h1>
+
+<a href="/criar/">Novo jogador</a>
+
+<ul>
+{% for j in jogadores %}
+    <li>
+        {{ j.nome }} - {{ j.idade }} - {{ j.time }}
+        <a href="/editar/{{ j.id }}/">Editar</a>
+        <a href="/deletar/{{ j.id }}/">Excluir</a>
+    </li>
+{% endfor %}
+</ul>
